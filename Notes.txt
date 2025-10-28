@@ -1,2 +1,1 @@
 test"SSH connected successfully" 
-test2
