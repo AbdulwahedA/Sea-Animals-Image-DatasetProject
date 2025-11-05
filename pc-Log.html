@@ -1,0 +1,80 @@
+Microsoft Windows [Version 10.0.26100.6725]
+(c) Microsoft Corporation. All rights reserved.
+
+F:\Git>C:/Users/FURY/AppData/Local/Programs/Python/Python313/python.exe "f:/Git/Sea Animals Image DatasetProject/test.py"
+2025-11-05 22:54:02.537233: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-11-05 22:54:05.943606: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "f:\Git\Sea Animals Image DatasetProject\test.py", line 19, in <module>
+    train_data = datagen.flow_from_directory(
+        train_dir, target_size=(224, 224), batch_size=32, subset='training'
+    )
+  File "C:\Users\FURY\AppData\Local\Programs\Python\Python313\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 1136, in flow_from_directory
+    return DirectoryIterator(
+        directory,
+    ...<16 lines>...
+        dtype=self.dtype,
+    )
+  File "C:\Users\FURY\AppData\Local\Programs\Python\Python313\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 456, in __init__
+    for subdir in sorted(os.listdir(directory)):
+                         ~~~~~~~~~~^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: './FishDataset/train'
+
+F:\Git>C:/Users/FURY/AppData/Local/Programs/Python/Python313/python.exe "f:/Git/Sea Animals Image DatasetProject/test.py"
+✅ Datensatz erfolgreich in train/ und val/ aufgeteilt!
+
+F:\Git>C:/Users/FURY/AppData/Local/Programs/Python/Python313/python.exe "f:/Git/Sea Animals Image DatasetProject/test.py"
+Traceback (most recent call last):
+  File "f:\Git\Sea Animals Image DatasetProject\test.py", line 14, in <module>
+    for cls in os.listdir(source_dir):
+               ~~~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'Sea Animals Image Dataset'
+
+F:\Git>
+
+F:\Git>C:/Users/FURY/AppData/Local/Programs/Python/Python313/python.exe "f:/Git/Sea Animals Image DatasetProject/split_dataset.py"
+✅ Split abgeschlossen: FishDataset/train und FishDataset/val erstellt.
+
+F:\Git>python test.py
+python: can't open file 'F:\\Git\\test.py': [Errno 2] No such file or directory
+
+F:\Git>CD F:\Git\Sea Animals Image DatasetProject
+
+F:\Git\Sea Animals Image DatasetProject>python test.py
+✅ Datensatz erfolgreich in train/ und val/ aufgeteilt!
+
+F:\Git\Sea Animals Image DatasetProject>C:/Users/FURY/AppData/Local/Programs/Python/Python313/python.exe "f:/Git/Sea Animals Image DatasetProject/test.py"
+2025-11-05 23:04:33.091986: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-11-05 23:04:35.953757: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+📂 Trainingsdaten: f:\Git\Sea Animals Image DatasetProject\FishDataset\train
+📂 Validierungsdaten: f:\Git\Sea Animals Image DatasetProject\FishDataset\val
+Found 9198 images belonging to 22 classes.
+Found 2309 images belonging to 22 classes.
+2025-11-05 23:04:38.384962: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.     
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Downloading data from https://storage.googleapis.com/keras-applications/efficientnetb0_notop.h5
+16705208/16705208 ━━━━━━━━━━━━━━━━━━━━ 14s 1us/step
+Epoch 1/10
+288/288 ━━━━━━━━━━━━━━━━━━━━ 390s 1s/step - accuracy: 0.0654 - loss: 3.0888 - val_accuracy: 0.0732 - val_loss: 3.0767
+Epoch 2/10
+288/288 ━━━━━━━━━━━━━━━━━━━━ 334s 1s/step - accuracy: 0.0734 - loss: 3.0769 - val_accuracy: 0.0732 - val_loss: 3.0707
+Epoch 3/10
+288/288 ━━━━━━━━━━━━━━━━━━━━ 248s 860ms/step - accuracy: 0.0735 - loss: 3.0744 - val_accuracy: 0.0732 - val_loss: 3.0715
+Epoch 4/10
+288/288 ━━━━━━━━━━━━━━━━━━━━ 231s 803ms/step - accuracy: 0.0735 - loss: 3.0736 - val_accuracy: 0.0732 - val_loss: 3.0702
+Epoch 5/10
+288/288 ━━━━━━━━━━━━━━━━━━━━ 250s 867ms/step - accuracy: 0.0735 - loss: 3.0736 - val_accuracy: 0.0732 - val_loss: 3.0754
+Epoch 6/10
+288/288 ━━━━━━━━━━━━━━━━━━━━ 251s 872ms/step - accuracy: 0.0735 - loss: 3.0740 - val_accuracy: 0.0732 - val_loss: 3.0726
+Epoch 7/10
+288/288 ━━━━━━━━━━━━━━━━━━━━ 245s 851ms/step - accuracy: 0.0735 - loss: 3.0720 - val_accuracy: 0.0732 - val_loss: 3.0712
+Epoch 8/10
+288/288 ━━━━━━━━━━━━━━━━━━━━ 235s 816ms/step - accuracy: 0.0735 - loss: 3.0709 - val_accuracy: 0.0732 - val_loss: 3.0706
+Epoch 9/10
+288/288 ━━━━━━━━━━━━━━━━━━━━ 241s 837ms/step - accuracy: 0.0735 - loss: 3.0705 - val_accuracy: 0.0732 - val_loss: 3.0703
+Epoch 10/10
+288/288 ━━━━━━━━━━━━━━━━━━━━ 237s 822ms/step - accuracy: 0.0734 - loss: 3.0708 - val_accuracy: 0.0732 - val_loss: 3.0702
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
+✅ Training abgeschlossen! Modell gespeichert als sea_animals_model.h5
+
+F:\Git\Sea Animals Image DatasetProject>
