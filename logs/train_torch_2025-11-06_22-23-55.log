@@ -1,3 +1,4 @@
 2025-11-06 22:23:55,988 - INFO - 📜 Log gestartet: F:\Git\Sea Animals Image DatasetProject\logs\train_torch_2025-11-06_22-23-55.log
 2025-11-06 22:23:55,989 - INFO - 🔥 Device: cpu
 2025-11-06 22:23:56,021 - INFO - 📊 22 Klassen erkannt: ['Clams', 'Corals', 'Crabs', 'Dolphin', 'Eel', 'Fish', 'Jelly Fish', 'Lobster', 'Nudibranchs', 'Octopus', 'Otter', 'Penguin', 'Puffers', 'Sea Rays', 'Sea Urchins', 'Seahorse', 'Seal', 'Sharks', 'Shrimp', 'Squid', 'Starfish', 'Turtle_Tortoise']
+2025-11-06 22:47:14,771 - INFO - Epoch 1: Train=52.91% | Val=74.06%
